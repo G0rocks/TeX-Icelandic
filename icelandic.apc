@@ -1,0 +1,26 @@
+% \subsection{\fname{icelandic.apc}}
+%
+% This file redefines the language-specific elements of \pkg{apacite}
+% for the icelandic language. Translation of APA elements into icelandic 
+% is not obvious. Ideas of which terms to use have been taken from
+% \citeA{Huldar}.
+%
+%    \begin{macrocode}
+%<*icelandic>
+%%
+%% icelandic.apc - icelandic translation of apacite elements
+%% Written by Huldar.
+%% Small adaptations by Erik Meijer
+%%
+%    \end{macrocode}
+%% Change "retrieved" to "sótt af"
+%    \begin{macrocode}
+%
+\renewcommand{\BRetrieved}[1]{H\"sótt frá {#1}, fr{\aa}n\ }% Websites; note the space.
+\renewcommand{\BRetrievedFrom}{H\"sótt frá fr{\aa}n\ }% Websites; note the space.
+%    \end{macrocode}
+% Restore category code of |@| sign.
+%    \begin{macrocode}
+\APACrestoreAtCode
+%</icelandic>
+%    \end{macrocode}
