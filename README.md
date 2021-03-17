@@ -1,6 +1,7 @@
 # TeX-Icelandic
 
 Files for Icelandic language support in various TeX packages.
+Latex á íslensku.
 
 # Contributing
 
